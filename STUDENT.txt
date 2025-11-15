@@ -1,0 +1,6 @@
+STUDENT: Windi Dwi Astuti
+PROJECT: Submission 2 - Story App (Berbagi Cerita)
+API_ENDPOINT: https://story-api.dicoding.dev/v1
+DEPLOY_URL: https://appstorysubm2.netlify.app/
+VAPID_PUBLIC_KEY: BCCs2eonMI-6H2ctvFaWg-UdDv387Vno_bzUzALpB442r2lCnsHmtrx8biyPi_E-1fSGABK_Qs_GlvPoJJqxbk
+NOTES: Icons placed in /icons/

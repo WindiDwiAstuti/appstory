@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Story App</title>
+
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#4a90e2" />
+
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Story App</h1>
+      <nav>
+        <a href="#/home">Home</a>
+        <a href="#/add">Tambah</a>
+        <a href="#/drafts">Drafts</a>
+        <button id="pushToggleBtn" aria-pressed="false">
+          Enable Notifications
+        </button>
+        <button id="installBtn" hidden>Install App</button>
+        <button id="logoutBtn">Logout</button>
+      </nav>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <footer>
+      <p>&copy; 2025 Story App</p>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      defer
+    ></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
