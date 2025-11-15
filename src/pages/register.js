@@ -24,24 +24,10 @@ export function renderRegister(app) {
   const form = document.getElementById("regForm");
   const msg = document.getElementById("msg");
 
-  const nameInput = document.getElementById("name");
-  const emailInput = document.getElementById("email");
-  const passwordInput = document.getElementById("password");
-
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
-
-    // kirim data dengan benar
-    const res = await registerUser(
-      nameInput.value.trim(),
-      emailInput.value.trim(),
-      passwordInput.value.trim()
-    );
-
+    const res = await registerUser(name.value, email.value, password.value);
     msg.textContent = res.message || "";
-
-    if (!res.error) {
-      window.location.hash = "/login";
-    }
+    if (!res.error) window.location.hash = "/login";
   });
 }
