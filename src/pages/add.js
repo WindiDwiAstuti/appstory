@@ -36,16 +36,19 @@ export function renderAdd(app) {
     </section>
   `;
 
-  // lokasi
-  let lat = null;
-  let lon = null;
+ let lat = null;
+ let lon = null;
 
+// FIX: map muncul 100% karena ditunda sedikit
+setTimeout(() => {
   enablePickLocation("map", (lt, ln) => {
     lat = lt;
     lon = ln;
     document.getElementById("coords").textContent =
       `${lat.toFixed(6)}, ${lon.toFixed(6)}`;
   });
+}, 50);
+
 
   const form = document.getElementById("addForm");
   const msg = document.getElementById("msg");
@@ -145,3 +148,4 @@ export function renderAdd(app) {
 
   refreshDrafts();
 }
+
