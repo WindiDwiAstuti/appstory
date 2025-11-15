@@ -39,7 +39,7 @@ export function renderAdd(app) {
  let lat = null;
  let lon = null;
 
-// FIX: map muncul 100% karena ditunda sedikit
+
 setTimeout(() => {
   enablePickLocation("map", (lt, ln) => {
     lat = lt;
@@ -148,4 +148,5 @@ setTimeout(() => {
 
   refreshDrafts();
 }
+
 
